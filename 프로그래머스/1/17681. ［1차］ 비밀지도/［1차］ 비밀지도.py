@@ -8,15 +8,10 @@ def make_binary(n, num):
 
 def solution(n, arr1, arr2):
     answer = []
-    
     for i, j in zip(arr1, arr2):
         a = make_binary(n, i)
         b = make_binary(n, j)
-        row_list = ''
-        for k, p in zip(a, b):
-            if k == '#' or p == '#': row_list += '#'
-            else: row_list += ' '
-        answer.append(row_list)
+        print(a, b)
     print(answer)
     
     return answer
